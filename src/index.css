@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "VT323", monospace;
+}
+
+body {
+    background-image: url('assets/background_linux.png');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+.NavLinkContainer {
+    .link-activo {
+      font-weight: bold;
+      border: 2px solid #157347;
+      border-radius: 5px;
+      padding: 0.5rem 1rem;
+      transition: all 0.3s ease;
+      margin: 0 1rem;
+    }
+}
+
+#brand {
+    margin-left: 5rem;
+}
+
+
+.homeTitle {
+    font-size: 5rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 28rem;
+    text-shadow:
+            0.2em 0.5em 0.1em #ff0000,
+            0.4em -0.3em 0.1em #ffd902
+    }
+
+.aboutPictures {
+    width: 150px;
+    height: 150px;
+    border-radius: 50%;
+}
+
+.background_games_image {
+    width: 250px;
+    height: 250px;
+    border-radius: 50%;
+    border: 5px solid black;
+}
+
+.pendrive_muestra_8bits {
+    height: 250px;
+}
+
+.Login {
+    overflow-y:hidden;
+}
+
+.startBtn {
+    border: none;
+    outline: none;
+    background-color: #1B4F96 !important;
+    color: white;
+    padding: 15px 40px;
+    font-size: 16px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    position: relative;
+    overflow: hidden;
+}
+
+.startBtn:hover {
+    background-color: #1B4F96;
+    box-shadow: 0 0 15px #2e548a;
+}
+
+.startBtn:hover::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+            120deg,
+            transparent,
+            rgba(255, 255, 255, 0.4),
+            transparent
+    );
+    transition: all 0.65s;
+}
+
+.startBtn:hover::before {
+    left: 100%;
+}
+
+#dropdownItem {
+    right: 100% !important
+}
