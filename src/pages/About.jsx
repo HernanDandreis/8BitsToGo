@@ -25,7 +25,7 @@ const About = () => {
             </article>
 
             <article className='my-3 w-100'>
-                <div className='row bg-dark py-4 rounded-4 opacity-75'>
+                <div className='row py-4 rounded-4' style={{ backgroundColor: 'rgba(33, 37, 41, 0.75)' }}>
                     <span className='col-md-2 col-sm-5 pt-4'>
                         <img
                             className='aboutPictures opacity-100 ms-4'
@@ -50,17 +50,19 @@ const About = () => {
             </article>
 
             <article className='my-4 w-100'>
-                <div className='row bg-dark py-4 rounded-4 opacity-75'>
+                <div className='row py-4 rounded-4' style={{ backgroundColor: 'rgba(33, 37, 41, 0.75)' }}>
                     <span className='col-md-2 col-sm-5 text-justify pt-5'>
+
                         <img
-                            className='aboutPictures opacity-100 ms-4'
+                            className='aboutPictures ms-4'
                             src= {StartPictureHerni}
                             alt="logo-primigenia"
                             onMouseEnter={() => SetStartPictureHerni('AvatarFalseJessHolograms.png')}
                             onMouseLeave={() => SetStartPictureHerni('AvatarTrueJessHolograms.png')}
                         />
+                        
                     </span>
-                    <p className='col-md-8 col-sm-7 h5 opacity-100'>
+                    <p className='col-md-8 col-sm-7 h5'>
                         Jess Holograms es una gamer nostálgica, desarrolladora autodidacta y amante declarada de Linux,
                         el sistema que considera no solo una herramienta, sino una forma de vida. Su pasión por los
                         videojuegos clásicos la llevó a crear una propuesta única: pendrives listos para conectar y jugar,
@@ -72,14 +74,9 @@ const About = () => {
                         acercando a nuevas generaciones a los píxeles que lo empezaron todo.
                     </p>
                 </div>
-                </article>
+            </article>
         </Container>
     )
 }
 
-
 export default About
-
-
-// PENDIENTES
-    // Completar con datos no fake
